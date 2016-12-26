@@ -3,10 +3,6 @@ title: "Reproducible Research: Project 1"
 output: github_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Summary
 
 **The purpose of this assignment is to analyze data from a FitBit and report any patterns recognized in the data.**
