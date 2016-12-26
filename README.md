@@ -43,7 +43,7 @@ print(paste('The Mean number of steps taken per day is', original_mean ,'and the
 hist(daily_steps$steps, col = "green", border = "blue", xlab = "Steps", main = "Histogram of Daily Steps")
 ```
 
-![hist_of_daily_steps_r1](PA1_template_files/figure-markdown_github/histogram-1.png)
+![](./Figures/hist_of_daily_steps_r1.png)
 
 What is the average daily activity pattern?
 -------------------------------------------
@@ -56,7 +56,7 @@ avg_interval <- aggregate(steps ~ interval, activity, mean)
 plot(avg_interval$interval, avg_interval$steps, type = "l", xlab = 'Interval', ylab = 'Avg Steps', main = 'Avg Steps by Interval')
 ```
 
-![](PA1_template_files/figure-markdown_github/timeplot-1.png)
+![](./Figures/time_series_plot_r1.png)
 
 ``` r
 # Get 5 minute interval with the highest average of steps
@@ -111,7 +111,7 @@ hist(daily_steps$steps, col = "green", border = "blue", xlab = "Steps", main = "
 legend("topleft", c("Imputed", "Original"), col=c("red", "green"), lwd=10)
 ```
 
-![](PA1_template_files/figure-markdown_github/comparison%20histogram-1.png)
+![](./Figures/Histo_Comparison_r1.png)
 
 Are there differences in activity patterns between weekdays and weekends?
 -------------------------------------------------------------------------
@@ -142,4 +142,4 @@ library(lattice)
 xyplot(steps ~ interval|dayofweek, weekday_average, layout=c(1,2), type = "l", main = "Average Steps by Day of Week", col = "blue")
 ```
 
-![](PA1_template_files/figure-markdown_github/xyplot-1.png)
+![](./Figures/Panel_Plot_R1.png)
