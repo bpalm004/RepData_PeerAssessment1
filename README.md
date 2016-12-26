@@ -43,7 +43,7 @@ print(paste('The Mean number of steps taken per day is', original_mean ,'and the
 hist(daily_steps$steps, col = "green", border = "blue", xlab = "Steps", main = "Histogram of Daily Steps")
 ```
 
-![](PA1_template_files/figure-markdown_github/histogram-1.png)
+![hist_of_daily_steps_r1](PA1_template_files/figure-markdown_github/histogram-1.png)
 
 What is the average daily activity pattern?
 -------------------------------------------
